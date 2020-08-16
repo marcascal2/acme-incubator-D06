@@ -24,7 +24,7 @@
 	
 	<acme:footer-subpanel code="master.footer.title.social">
 		<acme:footer-option icon="fab fa-linkedin" code="master.footer.label.linked-in" action="http://www.linkedin.com/" newTab="true"/>
-		<acme:footer-option icon="fab fa-twitter" code="master.footer.label.twitter" action="https://twitter.com/" newTab="true"/>
+		<acme:footer-option icon="fab fa-twitter" code="master.footer.label.twitter" action="https://google.es/" newTab="true"/>
 	</acme:footer-subpanel>
 	
 	<acme:footer-subpanel code="master.footer.title.languages">
@@ -37,3 +37,14 @@
 	</acme:footer-logo>		
 	
 </acme:footer-panel>
+
+<acme:menu-separator />
+
+<%@ page import='acme.entities.banners.Banner' %>
+
+<%
+	Banner banner = (Banner) request.getAttribute("bannerAdvisor");
+	String imageUrl = banner.getPicture();
+%>
+
+<p style="text-align:center;"><img src="<%= imageUrl %>"></p>
