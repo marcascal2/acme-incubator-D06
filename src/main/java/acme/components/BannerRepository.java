@@ -9,9 +9,10 @@ import org.springframework.data.jpa.repository.Query;
 import org.springframework.stereotype.Repository;
 
 import acme.entities.banners.Banner;
+import acme.framework.repositories.AbstractRepository;
 
 @Repository
-public interface BannerRepository {
+public interface BannerRepository extends AbstractRepository {
 
 	@Query("select count(b) from Banner b where b.card is not null")
 	int countBannersWithCard();
