@@ -67,7 +67,6 @@
 			<acme:menu-suboption code="master.menu.administrator.technologyrecords.create" action="/administrator/technology-record/create" />
 			<acme:menu-suboption code="master.menu.administrator.notice.create" action="/administrator/notice/create" />
 			<acme:menu-suboption code="master.menu.administrator.overtures.create" action="/administrator/overture/create" />
-			<acme:menu-suboption code="master.menu.administrator.banners.create" action="/administrator/banner/create" />
 			<acme:menu-suboption code="master.menu.administrator.toolrecord.create" action="/administrator/tool-record/create" />
 			<acme:menu-separator />
 			<acme:menu-suboption code="master.menu.administrator.dashboard" action="/administrator/dashboard/show" />
