@@ -88,16 +88,6 @@ master.menu.entrepreneur.applications = Applications
 master.menu.entrepreneur.investment-round.create = Create investment round
 master.menu.entrepreneur.investment-rounds = Investment Rounds
 
-# master.menu.provider ########################################################
-
-master.menu.provider = Provider
-master.menu.provider.favourite-link = Favourite link
-
-# master.menu.consumer ##########################################################
-
-master.menu.consumer = Consumer
-master.menu.consumer.favourite-link = Favourite link
-
 # master.menu.bookkeeper #########################################################
 
 master.menu.bookkeeper = Bookkeeper
@@ -121,10 +111,6 @@ master.menu.patron.banner.create = Create banner
 
 master.menu.user-account = Account
 master.menu.user-account.general-data = General data
-master.menu.user-account.provider = Provider data
-master.menu.user-account.become-provider = Become a provider
-master.menu.user-account.consumer = Consumer data
-master.menu.user-account.become-consumer = Become a consumer
 master.menu.user-account.investor = Investor data
 master.menu.user-account.become-investor = Become a investor
 master.menu.user-account.entrepreneur = Entrepreneur data
