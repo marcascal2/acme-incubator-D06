@@ -37,3 +37,14 @@
 	</acme:footer-logo>		
 	
 </acme:footer-panel>
+
+<acme:menu-separator />
+
+<%@ page import='acme.entities.banners.Banner' %>
+
+<%
+	Banner banner = (Banner) request.getAttribute("bannerAdvisor");
+	String imageUrl = banner.getPicture();
+%>
+
+<p style="text-align:center;"><img src="<%= imageUrl %>"></p>
