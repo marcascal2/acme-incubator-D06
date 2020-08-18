@@ -161,6 +161,59 @@
 		<property name="round" ref="investmentRound05" />
 		<property name="bookkeeper" ref="bookkeeper2Bookkeeper" />
 	</bean>
+	
+	<!-- Emails -->
+	<bean id="email01" class="acme.datatypes.Email">
+		<property name="fullName" value="Ryan West" />
+		<property name="email" value="ryan@bookkeeper.com"/>
+	</bean>
+
+	<bean id="email02" class="acme.datatypes.Email">
+		<property name="fullName" value="Tiffany Smith" />
+		<property name="email" value="tiffany@bookkeeper.com"/>
+	</bean>
+	
+	<bean id="email03" class="acme.datatypes.Email">
+		<property name="email" value="john@bookkeeper.com"/>
+	</bean>
+	
+	<bean id="email04" class="acme.datatypes.Email">
+		<property name="fullName" value="Lis Wet" />
+		<property name="email" value="lisw@investor.com"/>
+	</bean>
+	
+	<bean id="email05" class="acme.datatypes.Email">
+		<property name="email" value="javierr@investor.com"/>
+	</bean>
+	
+	<bean id="email06" class="acme.datatypes.Email">
+		<property name="fullName" value="Emi Col" />
+		<property name="email" value="emic@investor.com"/>
+	</bean>
+	
+	<bean id="email07" class="acme.datatypes.Email">
+		<property name="fullName" value="Mari Cas" />
+		<property name="email" value="maric@investor.com"/>
+	</bean>
+	
+	<bean id="email08" class="acme.datatypes.Email">
+		<property name="fullName" value="Lisa West" />
+		<property name="email" value="lisa@entrepreneur.com"/>
+	</bean>
+	
+	<bean id="email09" class="acme.datatypes.Email">
+		<property name="fullName" value="John Webster" />
+		<property name="email" value="john@entrepreneur.com"/>
+	</bean>
+	
+	<bean id="email10" class="acme.datatypes.Email">
+		<property name="email" value="mary@patron.com"/>
+	</bean>
+	
+	<bean id="email11" class="acme.datatypes.Email">
+		<property name="fullName" value="Frank Boomer" />
+		<property name="email" value="fboomer@patron.com"/>
+	</bean>
 
 	<!-- Bookkeepers -->
 	<bean name="bookkeeper1UserAccount" class="acme.framework.entities.UserAccount">
@@ -171,7 +224,7 @@
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Ryan" />
 				<property name="surname" value="West" />
-				<property name="email" value="ryanwest@acme.com" />
+				<property name="email" ref="email01" />
 			</bean>
 		</property>
 		<property name="roles">
@@ -210,7 +263,7 @@
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Tiffany" />
 				<property name="surname" value="Smith" />
-				<property name="email" value="tiffany@acme.com" />
+				<property name="email" ref="email02" />
 			</bean>
 		</property>
 		<property name="roles">
@@ -248,7 +301,7 @@
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Jhon" />
 				<property name="surname" value="Fill" />
-				<property name="email" value="jhon@acme.com" />
+				<property name="email" ref="email03" />
 			</bean>
 		</property>
 		<property name="roles">
@@ -285,8 +338,8 @@
 		<property name="identity">
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Lis" />
-				<property name="surname" value="Wst" />
-				<property name="email" value="lisawest@acme.com" />
+				<property name="surname" value="Wet" />
+				<property name="email" ref="email04" />
 			</bean>
 		</property>
 		<property name="roles">
@@ -323,7 +376,7 @@
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Javier" />
 				<property name="surname" value="Ruiz" />
-				<property name="email" value="javier@acme.com" />
+				<property name="email" ref="email05" />
 			</bean>
 		</property>
 		<property name="roles">
@@ -355,7 +408,7 @@
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Emi" />
 				<property name="surname" value="Col" />
-				<property name="email" value="emi@acme.com" />
+				<property name="email" ref="email06" />
 			</bean>
 		</property>
 		<property name="roles">
@@ -387,7 +440,7 @@
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Mari" />
 				<property name="surname" value="Cas" />
-				<property name="email" value="mari@acme.com" />
+				<property name="email" ref="email07" />
 			</bean>
 		</property>
 		<property name="roles">
@@ -536,7 +589,7 @@
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Lisa" />
 				<property name="surname" value="West" />
-				<property name="email" value="lisawest@acme.com" />
+				<property name="email" ref="email08" />
 			</bean>
 		</property>
 		<property name="roles">
@@ -567,7 +620,7 @@
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="John" />
 				<property name="surname" value="Webster" />
-				<property name="email" value="johnwebster@acme.com" />
+				<property name="email" ref="email09" />
 			</bean>
 		</property>
 		<property name="roles">
@@ -677,7 +730,7 @@
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Mary" />
 				<property name="surname" value="Collin" />
-				<property name="email" value="marycollin@acme.com" />
+				<property name="email" ref="email10" />
 			</bean>
 		</property>
 		<property name="roles">
@@ -713,7 +766,7 @@
 			<bean class="acme.datatypes.UserIdentity">
 				<property name="name" value="Frank" />
 				<property name="surname" value="Boomer" />
-				<property name="email" value="frankboomer@acme.com" />
+				<property name="email" ref="email11" />
 			</bean>
 		</property>
 		<property name="roles">

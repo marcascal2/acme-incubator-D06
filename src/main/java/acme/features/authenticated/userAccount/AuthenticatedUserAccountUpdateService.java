@@ -53,7 +53,7 @@ public class AuthenticatedUserAccountUpdateService implements AbstractUpdateServ
 
 		String password;
 
-		request.bind(entity, errors, "username", "password");
+		request.bind(entity, errors, "username", "password", "identity.email.fullName");
 		password = request.getModel().getString("password");
 		if (!password.equals("[MASKED-PASWORD]")) {
 			entity.setPassword(password);
@@ -66,7 +66,7 @@ public class AuthenticatedUserAccountUpdateService implements AbstractUpdateServ
 		assert entity != null;
 		assert model != null;
 
-		request.unbind(entity, model, "username", "identity.name", "identity.surname", "identity.email");
+		request.unbind(entity, model, "username", "identity.name", "identity.surname", "identity.email.email");
 
 		if (request.isMethod(HttpMethod.POST)) {
 			request.transfer(model, "password");
@@ -115,6 +115,9 @@ public class AuthenticatedUserAccountUpdateService implements AbstractUpdateServ
 	public void update(final Request<UserAccount> request, final UserAccount entity) {
 		assert request != null;
 		assert entity != null;
+
+		String fn = entity.getIdentity().getName() + " " + entity.getIdentity().getSurname();
+		entity.getIdentity().getEmail().setFullName(fn);
 
 		this.repository.save(entity);
 		for (UserRole role : entity.getRoles()) {

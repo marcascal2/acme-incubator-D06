@@ -19,7 +19,7 @@ administrator.notice.form.label.deadline = Fecha límite
 administrator.notice.form.label.body = Cuerpo
 administrator.notice.form.label.relatedNotice = Noticias relacionadas
 
-administrator.notice.form.label.relatedNotices = = Noticias relacionadas
+administrator.notice.form.label.relatedNotices = Noticias relacionadas
 
 administrator.notice.form.label.check = Confirma!
 administrator.notice.form.button.return = Volver
