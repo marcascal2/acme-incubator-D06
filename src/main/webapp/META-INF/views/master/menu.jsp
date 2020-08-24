@@ -58,7 +58,6 @@
 			<acme:menu-suboption code="master.menu.administrator.inquires" action="/administrator/inquire/list" />
 			<acme:menu-suboption code="master.menu.administrator.challenges" action="/administrator/challenge/list" />
 			<acme:menu-suboption code="master.menu.administrator.technologyrecords.list" action="/administrator/technology-record/list" />
-			<acme:menu-suboption code="master.menu.administrator.banners" action="/administrator/banner/list" />
 			<acme:menu-suboption code="master.menu.administrator.overtures" action="/administrator/overture/list" />
 			<acme:menu-suboption code="master.menu.administrator.toolrecords" action="/administrator/tool-record/list" />
 			<acme:menu-separator />
