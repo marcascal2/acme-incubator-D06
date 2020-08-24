@@ -18,33 +18,36 @@
 
 <acme:footer-panel>
 	<acme:footer-subpanel code="master.footer.title.about">
-		<acme:footer-option icon="fa fa-building" code="master.footer.label.company" action="/master/company"/>
-		<acme:footer-option icon="fa fa-file" code="master.footer.label.license" action="/master/license"/>		
+		<acme:footer-option icon="fa fa-building" code="master.footer.label.company" action="/master/company" />
+		<acme:footer-option icon="fa fa-file" code="master.footer.label.license" action="/master/license" />
 	</acme:footer-subpanel>
-	
+
 	<acme:footer-subpanel code="master.footer.title.social">
-		<acme:footer-option icon="fab fa-linkedin" code="master.footer.label.linked-in" action="http://www.linkedin.com/" newTab="true"/>
-		<acme:footer-option icon="fab fa-twitter" code="master.footer.label.twitter" action="https://twitter.com/" newTab="true"/>
+		<acme:footer-option icon="fab fa-linkedin" code="master.footer.label.linked-in" action="http://www.linkedin.com/" newTab="true" />
+		<acme:footer-option icon="fab fa-twitter" code="master.footer.label.twitter" action="https://twitter.com/" newTab="true" />
 	</acme:footer-subpanel>
-	
+
 	<acme:footer-subpanel code="master.footer.title.languages">
-		<acme:footer-option icon="fa fa-language" code="master.footer.label.english" action="/?language=en"/>
-		<acme:footer-option icon="fa fa-language" code="master.footer.label.spanish" action="/?language=es"/>
+		<acme:footer-option icon="fa fa-language" code="master.footer.label.english" action="/?language=en" />
+		<acme:footer-option icon="fa fa-language" code="master.footer.label.spanish" action="/?language=es" />
 	</acme:footer-subpanel>
-	
+
 	<acme:footer-logo logo="images/logo.png">
-		<acme:footer-copyright code="master.company.name"/>
-	</acme:footer-logo>		
-	
+		<acme:footer-copyright code="master.company.name" />
+	</acme:footer-logo>
+
 </acme:footer-panel>
 
 <acme:menu-separator />
 
-<%@ page import='acme.entities.banners.Banner' %>
+<%@ page import='acme.entities.banners.Banner'%>
 
-<%
+<jstl:if test="${notBanner}">
+	<%
 	Banner banner = (Banner) request.getAttribute("bannerAdvisor");
 	String imageUrl = banner.getPicture();
-%>
-
-<p style="text-align:center;"><img src="<%= imageUrl %>"></p>
+	
+	%><p style="text-align: center;">
+		<img src="<%= imageUrl %>">
+	</p>
+</jstl:if>

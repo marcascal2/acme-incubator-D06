@@ -16,17 +16,6 @@ bg=yellow</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>488</x>
-      <y>232</y>
-      <w>208</w>
-      <h>80</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>240.0;10.0;10.0;80.0</additional_attributes>
-  </element>
-  <element>
     <id>UMLClass</id>
     <coordinates>
       <x>192</x>
@@ -70,17 +59,6 @@ bg=blue</panel_attributes>
     <panel_attributes>lt=..
 </panel_attributes>
     <additional_attributes>10.0;40.0;10.0;10.0</additional_attributes>
-  </element>
-  <element>
-    <id>Relation</id>
-    <coordinates>
-      <x>544</x>
-      <y>232</y>
-      <w>152</w>
-      <h>160</h>
-    </coordinates>
-    <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>170.0;10.0;10.0;180.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -174,36 +152,6 @@ CustomCommand
 + LIST_MINE
 
 bg=orange</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>376</x>
-      <y>296</y>
-      <w>160</w>
-      <h>72</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Role&gt;&gt;
-Provider
---
-+ company: String {NotBlank}
-+ sector: String {NotBlank}</panel_attributes>
-    <additional_attributes/>
-  </element>
-  <element>
-    <id>UMLClass</id>
-    <coordinates>
-      <x>432</x>
-      <y>376</y>
-      <w>168</w>
-      <h>72</h>
-    </coordinates>
-    <panel_attributes>&lt;&lt;Role&gt;&gt;
-Consumer
---
-+ company: String {NotBlank}
-+ sector: String {NotBlank}</panel_attributes>
     <additional_attributes/>
   </element>
   <element>
@@ -415,8 +363,8 @@ Notice
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>280</x>
-      <y>464</y>
+      <x>256</x>
+      <y>456</y>
       <w>240</w>
       <h>136</h>
     </coordinates>
@@ -500,7 +448,7 @@ SpamList
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>816</x>
+      <x>752</x>
       <y>392</y>
       <w>208</w>
       <h>96</h>
@@ -517,8 +465,8 @@ Entrepeneur
   <element>
     <id>UMLClass</id>
     <coordinates>
-      <x>624</x>
-      <y>408</y>
+      <x>512</x>
+      <y>384</y>
       <w>160</w>
       <h>88</h>
     </coordinates>
@@ -639,22 +587,22 @@ bg=yellow</panel_attributes>
     <coordinates>
       <x>680</x>
       <y>232</y>
-      <w>152</w>
+      <w>88</w>
       <h>232</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>10.0;10.0;170.0;270.0</additional_attributes>
+    <additional_attributes>10.0;10.0;90.0;270.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>632</x>
+      <x>520</x>
       <y>232</y>
-      <w>72</w>
-      <h>192</h>
+      <w>184</w>
+      <h>168</h>
     </coordinates>
     <panel_attributes>lt=&lt;&lt;-</panel_attributes>
-    <additional_attributes>70.0;10.0;10.0;220.0</additional_attributes>
+    <additional_attributes>210.0;10.0;10.0;190.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -865,16 +813,16 @@ describes v</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>696</x>
-      <y>488</y>
-      <w>144</w>
-      <h>96</h>
+      <x>584</x>
+      <y>464</y>
+      <w>256</w>
+      <h>120</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=0..*
 make &gt;</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;90.0;160.0;90.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;120.0;300.0;120.0</additional_attributes>
   </element>
   <element>
     <id>UMLClass</id>
@@ -912,16 +860,16 @@ is applied to &gt;</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>1016</x>
+      <x>952</x>
       <y>472</y>
-      <w>280</w>
+      <w>344</w>
       <h>184</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=1
 m2=0..*
 can publish v</panel_attributes>
-    <additional_attributes>10.0;10.0;130.0;10.0;130.0;160.0;310.0;160.0;310.0;210.0</additional_attributes>
+    <additional_attributes>10.0;10.0;210.0;10.0;210.0;160.0;390.0;160.0;390.0;210.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>
@@ -972,16 +920,16 @@ bg=yellow</panel_attributes>
   <element>
     <id>Relation</id>
     <coordinates>
-      <x>656</x>
-      <y>488</y>
-      <w>520</w>
-      <h>384</h>
+      <x>544</x>
+      <y>464</y>
+      <w>632</w>
+      <h>408</h>
     </coordinates>
     <panel_attributes>lt=-
 m1=0..*
 m2=0..*
 belong ^</panel_attributes>
-    <additional_attributes>10.0;10.0;10.0;130.0;150.0;130.0;150.0;370.0;610.0;370.0;610.0;460.0</additional_attributes>
+    <additional_attributes>10.0;10.0;10.0;160.0;290.0;160.0;290.0;400.0;750.0;400.0;750.0;490.0</additional_attributes>
   </element>
   <element>
     <id>Relation</id>

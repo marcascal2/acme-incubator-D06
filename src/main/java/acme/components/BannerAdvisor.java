@@ -23,4 +23,13 @@ public class BannerAdvisor {
 		return result;
 	}
 
+	@ModelAttribute("notBanner")
+	public Boolean notBanners() {
+		Boolean notBanner;
+
+		notBanner = this.repository.findRandomBanner() == null;
+
+		return !notBanner;
+	}
+
 }

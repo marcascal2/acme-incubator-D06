@@ -29,11 +29,14 @@ public interface BannerRepository extends AbstractRepository {
 
 		bannerCount = this.countBannersWithCard();
 		random = ThreadLocalRandom.current();
-		bannerIndex = random.nextInt(0, bannerCount);
-
-		page = PageRequest.of(bannerIndex, 1);
-		list = this.findManyBannersWithCard(page);
-		result = list.isEmpty() ? null : list.get(0);
+		if (bannerCount > 0) {
+			bannerIndex = random.nextInt(0, bannerCount);
+			page = PageRequest.of(bannerIndex, 1);
+			list = this.findManyBannersWithCard(page);
+			result = list.isEmpty() ? null : list.get(0);
+		} else {
+			result = null;
+		}
 
 		return result;
 	}
