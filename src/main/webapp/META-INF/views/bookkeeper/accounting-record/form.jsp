@@ -18,7 +18,7 @@
 <acme:form>
 	<jstl:if test="${command != 'create' && !canUpdate}">
 		<acme:form-textbox code="bookkeeper.accounting-record.form.label.title" path="title" readonly="true" />
-		<acme:form-textbox code="bookkeeper.accounting-record.form.label.status" path="status" readonly="true" />
+		<acme:form-textbox code="bookkeeper.accounting-record.form.label.status" path="status" readonly="true" placeholder="DRAFT or PUBLISHED"/>
 		<acme:form-moment code="bookkeeper.accounting-record.form.label.creationMoment" path="creationMoment" readonly="true" />
 		<acme:form-textbox code="bookkeeper.accounting-record.form.label.body" path="body" readonly="true" />
 	</jstl:if>

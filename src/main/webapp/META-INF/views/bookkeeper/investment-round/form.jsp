@@ -28,7 +28,7 @@
 		action="/bookkeeper/activity/list?id=${invId}" />
 	<acme:form-submit method="get" code="bookkeeper.investment-round.form.button.accounting"
 		action="/bookkeeper/accounting-record/list?id=${invId}" /> 
-	<acme:form-submit test="${not isMine}" method="get" code="bookkeeper.investment-round-not-mine.form.button.create.accounting"
+	<acme:form-submit method="get" code="bookkeeper.investment-round-not-mine.form.button.create.accounting"
 		action="/bookkeeper/accounting-record/create?invId=${invId}" />
 
 </acme:form>
